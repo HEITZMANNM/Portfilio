@@ -13,8 +13,10 @@ export class SkillsListComponent implements OnInit{
   constructor(private mySkillsService: MySkillsService) {
   }
 
-  ngOnInit(){
-    this.skills = this.mySkillsService.getSkills();
+  ngOnInit() {
+    this.mySkillsService.getSkills().subscribe(data => {
+      this.skills = data;
+    });
   }
 
 }

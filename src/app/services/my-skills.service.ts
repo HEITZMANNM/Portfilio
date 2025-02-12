@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class MySkillsService {
     { name: 'Java', description: 'Langage de programmation de haut niveau orienté objet pour développement d\'applications backend', niveau: 4 }
   ];
 
-  getSkills() {
-    return this.skills;
+  getSkills(): Observable<{ name: string, description: string, niveau: number }[]> {
+    return of(this.skills); 
   }
 }

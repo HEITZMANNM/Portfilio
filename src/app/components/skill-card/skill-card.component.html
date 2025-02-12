@@ -1,0 +1,8 @@
+<p-card [style]="{ width: '20rem' }">
+    <ng-template pTemplate="title">{{ skill.name }}</ng-template>
+    <ng-template pTemplate="content">
+        <p>{{ skill.description }}</p>
+        <h4>Niveau: </h4>
+        <p-rating [ngModel]="skill.niveau" [readonly]="true" [cancel]="false"></p-rating>
+    </ng-template>
+</p-card>

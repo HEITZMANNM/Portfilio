@@ -1,0 +1,18 @@
+nav {
+    background-color: #000000;
+    padding: 10px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  li a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,16 @@
+<p-toast></p-toast>
+
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+
+    <input pInputText [(ngModel)]="form.name" name="name" placeholder="Nom*" required />
+    <input pInputText [(ngModel)]="form.prenom" name="prenom" placeholder="Prenom*" required />
+    <input pInputText [(ngModel)]="form.email" name="email" placeholder="Email*" required email  />
+    <input pInputText [(ngModel)]="form.sujet" name="sujet" placeholder="Sujet*" required />
+    
+    <label for="description">Message :</label>
+    <textarea id="description" [(ngModel)]="form.description" name="description*" required></textarea>
+    
+    <p class="obligatoireLabel">* champs obligatoires</p>
+
+    <p-button label="Envoyer" icon="pi pi-send" type="submit" [disabled]="!contactForm.valid" />
+</form>

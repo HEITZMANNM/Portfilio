@@ -1,0 +1,45 @@
+<div class="container">
+    <h1>Bienvenue sur mon Portfolio</h1>
+
+    <div class="cards-container">  
+        <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+            <ng-template pTemplate="header">
+                <img src="assets/images/profile2.png" alt="Photo de profil">
+                <p>Nom: HEITZMANN</p>
+                <p>Prenom: Mathieu</p>
+                <p>Date de naissance: 26/12/1992</p>
+            </ng-template>
+            <ng-template pTemplate="title">
+                Mon poste actuel
+            </ng-template>
+            <ng-template pTemplate="content">
+                <p>
+                    Actuellement en reconversion professionnelle, je suis en poste au sein de l'entreprise Socomec, au poste de développeur Java. 
+                    Je m'occupe du développement des solutions Selectors, qui sont des solutions de gestion de l'énergie.
+                </p>
+            </ng-template>
+        </p-card>
+        <p-card [style]="{ width: '25rem', overflow: 'hidden' }">
+            <ng-template pTemplate="title">
+                Mon parcours et Diplômes
+            </ng-template>
+            <ng-template pTemplate="content">
+                <p>
+                    🎓 Diplôme en cours:  M2 Dev Full Stack - PMN
+                </p>
+                <p>
+                    🎓 Diplôme obtenu: Licence developpeur Java - OpenClassRooms
+                </p>
+                <p-divider />
+                <p>
+                    📍 Expérience en développement full-stack chez Socomec  
+                </p>
+                <p-divider />
+                <p>
+                    💡 Passionné par les nouvelles technologies.
+
+                </p>
+            </ng-template>
+        </p-card>
+    </div>
+</div>
